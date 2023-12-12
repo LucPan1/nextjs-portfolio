@@ -1,0 +1,12 @@
+.observer {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 
+    transform 1.5s ease-out,
+    opacity 1.5s ease-out;
+}
+
+.observer.active {
+    transform: translateX(0);
+    opacity: 1;
+}
