@@ -6,7 +6,7 @@ import futur from "../public/assets/main_image/image.jpeg"
 
 const Main = () => {
   return (
-    <div className='relative h-screen'>
+    <div className='relative min-h-screen'>
       <section id="home">
       <PageWrapper>
         <h1 className='italic absolute top-72 left-1/2 transform -translate-x-1/2 text-white text-4xl font-bold'>

@@ -8,7 +8,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
     console.log(observerRef);
   
     useEffect(() => {
-      console.log(observerRef);
+      // console.log(observerRef);
       const observer = new IntersectionObserver(entries => {
         if(entries[0].isIntersecting) {
           observerRef.current.classList.add("active");
@@ -22,7 +22,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
     <div className='pt-18'>
       <div 
         className="h-48 md:h-132 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl.src})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center center"}}
+        style={{ background: `url(${imgUrl.src})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"/*, backgroundPosition: "center center"*/}}
       >
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
           <Link

@@ -89,38 +89,16 @@ const projectsData = [
 ];
 
 const Projects = () => {
-  // const observerRef = useRef()
-  // console.log(observerRef);
-
-  // useEffect(() => {
-  //   console.log(observerRef);
-  //   const observer = new IntersectionObserver(entries => {
-  //     if(entries[0].isIntersecting) {
-  //       observerRef.current.classList.add("active");
-  //       observer.unobserve(observerRef.current)
-  //     }
-  //   })
-  //   observer.observe(observerRef.current)
-  // }, [])
-  // const ref = useRef(null);
-  // const isInView = useInView(ref, { once: true });
   return (
-    <>
+    <div className='min-h-screen'>
     
     <h2 className="text-center text-4xl font-bold text-white pt-72 mb-8 md:mb-12">
       Mes Projets
     </h2>
     <section id="projects">
 
-    <ul className="grid md:grid-cols-3 gap-8 md:gap-8">
+    <ul className="grid md:grid-cols-3 gap-8 md:gap-5">
       {projectsData.map((project, index) => (
-        // <motion.li
-        //   key={index}
-      
-        //   initial="initial"
-        //   animate={isInView ? "animate" : "initial"}
-        //   transition={{ duration: 0.3, delay: index * 0.4 }}
-        // >
           <ProjectsCard
             key={project.id}
             title={project.title}
@@ -129,14 +107,13 @@ const Projects = () => {
             gitUrl={project.gitUrl}
             previewUrl={project.previewUrl}
           />
-        //  </motion.li>
       ))}
     </ul>
     </section>
-    </>
+    </div>
   
-  )
-      }
+      )
+    }
     
 
 
