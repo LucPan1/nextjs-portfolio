@@ -27,7 +27,7 @@ const projectsData = [
     title: "Site de Bubble Tea",
     description: "Projet développé en Laravel",
     image: bubbleImg,
-    gitUrl: "/",
+    gitUrl: "https://github.com/LucPan1/Bubble_My_Tea",
     previewUrl: "/",
   },
   {
@@ -43,7 +43,7 @@ const projectsData = [
     title: "Mini-RPG (The Hyrule Castle)",
     description: "Jeu bash en Typescript",
     image: rpgImg,
-    gitUrl: "https://www.ellis-car.fr/blog/",
+    gitUrl: "https://github.com/LucPan1/The_Hyrule_Castle",
     previewUrl: "/",
   },
   {
@@ -59,7 +59,7 @@ const projectsData = [
     title: "Chat local",
     description: "Système de chat en socket.io",
     image: chatImg,
-    gitUrl: "https://www.ellis-car.fr/blog/",
+    gitUrl: "https://github.com/LucPan1/My_IRC",
     previewUrl: "/",
   },
   {
