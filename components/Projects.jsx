@@ -4,7 +4,7 @@ import blogImg from "../public/assets/projects/blog.png";
 import bubbleImg from "../public/assets/projects/bubble_tea_project.png";
 import rpgImg from "../public/assets/projects/rpg_base_game.png";
 import chatImg from "../public/assets/projects/chat_irc.png";
-import luhnImg from "../public/assets/projects/luhn_rush.png";
+import backImg from "../public/assets/projects/c2wk_back_end.png";
 import sicilylinesImg from "../public/assets/projects/sicilylines.png";
 import tshopImg from "../public/assets/projects/tshop.png";
 import reservationImg from "../public/assets/projects/reservation-csharp.png";
@@ -64,9 +64,9 @@ const projectsData = [
   },
   {
     id: 7,
-    title: "Code De Luhn",
-    description: "Algorithme de Luhn en Typescript",
-    image: luhnImg,
+    title: "Projet Back_End",
+    description: "Système d'authentification en Node js",
+    image: backImg,
     gitUrl: "https://www.ellis-car.fr/blog/",
     previewUrl: "/",
   },
@@ -91,11 +91,12 @@ const projectsData = [
 const Projects = () => {
   return (
     <div className='min-h-screen'>
-    
-    <h2 className="text-center text-4xl font-bold text-white pt-72 mb-8 md:mb-12">
+
+     <section id="projects">
+    <h2 className="text-center text-4xl font-bold text-white pt-28 mb-8 md:mb-12">
       Mes Projets
     </h2>
-    <section id="projects">
+   
 
     <ul className="grid md:grid-cols-3 gap-8 md:gap-5">
       {projectsData.map((project, index) => (

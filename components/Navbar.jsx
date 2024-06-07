@@ -25,7 +25,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20 z-[100]"}>
+    <div className={shadow ? "fixed w-full h-32 shadow-xl z-[100]" : "fixed w-full h-20 z-[100]"}>
       <div className="flex justify-between items-center px-0 2xl:px-16">
        
         <div>
@@ -50,7 +50,7 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden cursor-pointer pr-3">
+          <div onClick={handleNav} className="md:hidden cursor-pointer pl-3 absolute top-7 left-2">
             <AiOutlineMenu size={25} />
           </div>
         </div>

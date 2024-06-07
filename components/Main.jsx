@@ -10,7 +10,7 @@ const Main = () => {
       <section id="home">
       <PageWrapper>
         <h1 className='italic absolute top-72 left-1/2 transform -translate-x-1/2 text-white text-4xl font-bold'>
-    Développeur web
+    Développeur full-stack
   </h1>
   </PageWrapper>
   <Image className='w-full h-full object-cover'
